@@ -24,12 +24,14 @@ quick-error = "^1.1.0"
 hfs_paths = "^0.1.0"
 
 [dependencies.xplm-sys]
-version = "^0.2.1"
+git = "https://github.com/Pavlos1/xplm-sys"
+branch = "master"
 default-features = false
 
 [features]
 xplm200 = ["xplm-sys/xplm200"]
 xplm210 = ["xplm-sys/xplm210"]
+xplm300 = ["xplm-sys/xplm300"]
 default = ["xplm200", "xplm210"]
 
 [[example]]
